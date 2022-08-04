@@ -18,9 +18,9 @@ jobs:
         python-version: '3.x'
     - name: configure
       shell: bash
-      working-directory: ${{github.workspace}}/build      
+      working-directory: ${{github.workspace}}\build      
       run: cmake ..
     - name: make
-      working-directory: ${{github.workspace}}/build
+      working-directory: ${{github.workspace}}\build
       shell: bash
       run: cmake --build .
