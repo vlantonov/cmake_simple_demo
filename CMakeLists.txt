@@ -13,7 +13,7 @@ ExternalProject_Add(simple
 	INSTALL_DIR ${PROJECT_BINARY_DIR}
 	CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=<INSTALL_DIR>)
 
-if (WIN32 OR APPLE)
+if (WIN32)
 set(SIMPLE_LIBS simple.lib)
 else() 
 set(SIMPLE_LIBS -lsimple)
