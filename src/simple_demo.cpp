@@ -3,6 +3,6 @@
 
 int main(int argc, const char *argv[])
 {
-	std::cout << "Simple Demo: " << simple_lib_name() << std::endl;
+	std::cout << "Simple Demo1: " << simple_lib_name() << std::endl;
 	return 0;
 }
