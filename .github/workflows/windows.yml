@@ -13,9 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
+    - name: create     
+      run: cmake -E make_directory ${{github.workspace}}/build
     - name: configure
       shell: bash
       working-directory: ${{github.workspace}}\build      
